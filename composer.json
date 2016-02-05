@@ -2,7 +2,7 @@
     "name": "geevcookie/bolt-cloudflare",
     "description": "Ensures that the correct user IP is used when using CloudFlare",
     "type": "bolt-extension",
-    "keywords": [ "cloudflare", ],
+    "keywords": [ "cloudflare" ],
     "version": "1.0.0",
     "require": {
         "bolt/bolt": ">=2.0.0,<3.0.0"
