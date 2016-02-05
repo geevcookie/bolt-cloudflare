@@ -1,0 +1,35 @@
+{
+    "name": "geevcookie/bolt-cloudflare",
+    "description": "Ensures that the correct user IP is used when using CloudFlare",
+    "type": "bolt-extension",
+    "keywords" : [ "cloudflare", "bolt" ],
+    "require": {
+        "bolt/bolt": ">=2.0.0,<3.0.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Zander Janse van Rensburg",
+            "email": "zjvren@geevcookie.com"
+        }
+    ],
+	"minimum-stability" : "dev",
+	"prefer-stable" : true,
+    "autoload": {
+        "files": [
+            "init.php"
+        ],
+        "psr-4": {
+            "Bolt\\Extension\\GeevCookie\\BoltCloudFlare\\": ""
+        }
+    },
+    "autoload-dev" : {
+        "psr-4" : {
+            "Bolt\\Extension\\GeevCookie\\BoltCloudFlare\\Tests\\" : "tests/",
+            "Bolt\\Tests\\" : "vendor/bolt/bolt/tests/phpunit/unit/"
+        }
+    },
+    "extra": {
+        "bolt-assets": "assets"
+    }
+}
